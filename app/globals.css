@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 12px rgba(56, 189, 248, 0.35), 0 0 20px rgba(99, 102, 241, 0.25); }
+  50% { text-shadow: 0 0 22px rgba(56, 189, 248, 0.65), 0 0 30px rgba(99, 102, 241, 0.45); }
+}
+
+h1,
+h2,
+h3 {
+  animation: glow 5s ease-in-out infinite;
+}

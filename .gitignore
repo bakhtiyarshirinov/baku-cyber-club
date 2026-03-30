@@ -1,0 +1,47 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Next.js
+.next/
+out/
+.next/**/*
+.next
+
+# Build output
+build/
+coverage/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# System files
+*.log
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# git lfs unwanted in repo
+*.node
